@@ -1,97 +1,292 @@
 .home-box {
-    background-color: red;
-    width: 100%;
+  background-color: red;
+  width: 100%;
 }
 
 .home-box header {
-    background-image: url(../assets/desktop/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 690px;
-    padding: 0 20px;
-    box-sizing: border-box;
+  background-image: url(../assets/desktop/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 690px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .home-box header nav {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    padding: 20px 10px;
-    box-sizing: border-box;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 #menu {
-    display: none;
+  display: none;
 }
 
 .home-box header nav ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: #fff;
 }
 
 .home-box header nav ul li {
-    padding: 5px 10px;
-    margin: 0 25px;
+  padding: 5px 10px;
+  margin: 0 25px;
 }
 
 .home-box header button {
-    background-color: #fff;
-    font-family: "Young Serif", sans-serif;
-    font-size: 15px;
-    border-radius: 50px;
-    border: none;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding: 10px 30px;
-    transition: 400ms;
+  background-color: #fff;
+  font-family: "Young Serif", sans-serif;
+  font-size: 15px;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 10px 30px;
+  transition: 400ms;
 }
 
 .home-box header button:hover {
-    background-color: rgba(255, 255, 255, 0.57);
-    color: #000;
+  background-color: rgba(255, 255, 255, 0.57);
+  color: #000;
+  cursor: pointer;
 }
 
 .home-box header div {
-    text-align: center;
-    font-family: "Young Serif", sans-serif;
-    color: #fff;
+  text-align: center;
+  font-family: "Young Serif", sans-serif;
+  color: #fff;
 }
 
 .home-box header div h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-    margin: 40px auto;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 40px auto;
 }
 
 .home-box header div img {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 main {
-    background-color: #fff;
-    box-sizing: border-box;
-    overflow: hidden;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-#mob-img {
+main .info-box {
+  margin: 0 auto;
+}
+
+main .info-box div {
+  display: flex;
+}
+
+main .info-box div section {
+  width: 720px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 600px;
+}
+
+main .info-box div section aside {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main .info-box div section aside h1 {
+  font-family: "Young Serif";
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+main .info-box div section aside p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #808080;
+  margin: 20px 0;
+}
+
+main .info-box div section aside a {
+  text-decoration: underline 0.4em #fbd03371;
+  text-underline-offset: 0px;
+  transition: text-decoration-color 300ms, text-underline-offset 300ms;
+  color: #000;
+  font-size: 13px;
+  font-family: "Young Serif", sans-serif;
+  transition: 300ms;
+}
+
+main .info-box div section aside a:hover {
+  text-decoration-color: #fcd633;
+}
+
+#red {
+  text-decoration: underline 0.4em #ef716364;
+}
+
+#red:hover {
+  text-decoration-color: #ef7063;
+}
+
+main .info-box div section img {
+  display: block;
+  width: 720px;
+}
+
+#mob {
+  display: none;
+}
+
+.more-box {
+    display: flex;
+}
+
+.more-box div {
+    width: 720px;
+    height: 600px;
+    position: relative;
+}
+
+.more-box div section {
+    position: absolute;
+    top: 67%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    color: #1f536b;
+    text-align: center;
+}
+
+.more-box .image-box3 {
+    background-image: url(../assets/desktop/cherry.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.more-box .image-box4 {
+    background-image: url(../assets/desktop/photography.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.more-box div section h1 {
+    font-family: "Young Serif", sans-serif;
+    font-size: 30px;
+}
+
+.more-box div section p {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1300px) {
+  main .info-box div section {
+    align-items: center;
+  }
+  .image-box1,
+  .image-box2 {
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 0 0 0 15px;
+  }
+  .image-box2 {
+    border-radius: 0 15px 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .info-box div section {
+    height: 500px;
+  }
+  .more-box div {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #menu {
+    display: block;
+  }
+  .home-box header nav ul {
     display: none;
+  }
+  main .info-box div {
+    display: block;
+  }
+  main .info-box div section {
+    width: 100%;
+    height: fit-content;
+  }
+  #mob {
+    display: block;
+    width: 100%;
+  }
+  #desk {
+    display: none;
+  }
+  main .info-box div section aside {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  main .info-box div .text-box{
+    height: 500px;
+    text-align: center;
+  }
+  main .info-box div .text-box aside {
+    width: 70%;
+  }
+  .more-box {
+    display: block;
+  }
+  .more-box div {
+    width: 100%;
+    height: 640px;
+  }
+  .more-box div section {
+    top: auto;
+    bottom: 60px;
+  }
+  .more-box .image-box3 {
+    background-image: url(../assets/mobile/cherry.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more-box .image-box4 {
+    background-image: url(../assets/mobile/photography.jpg);
+  }
 }
-@media screen and (max-width:540px) {
-    #menu {
-        display: block;
-    }
-    .home-box header nav ul {
-        display: none;
-    }
-}
-@media screen and (max-width:500px) {
-    .home-box header {
-        background-image: url(../assets/mobile/header.jpg);
-    }
+@media screen and (max-width: 500px) {
+  .home-box header {
+    background-image: url(../assets/mobile/header.jpg);
+  }
+  main .info-box div {
+    display: block;
+  }
+  main .info-box div section {
+    width: 100%;
+    height: fit-content;
+  }
+  #mob {
+    display: block;
+  }
+  #mob {
+    width: 100%;
+  }
+  #desk {
+    display: none;
+  }
 }
