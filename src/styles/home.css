@@ -428,6 +428,7 @@ ul li:hover::before {
   .testimonial-box {
     height: 100%;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   .testimonial-box section div {
     height: 100%;
