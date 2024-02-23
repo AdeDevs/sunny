@@ -8,6 +8,10 @@ import StandoutMob from "../assets/mobile/standout.jpg";
 import Emily from "../assets/emily.jpg";
 import Thomas from "../assets/thomas.jpg";
 import Jennie from "../assets/jennie.jpg";
+import Facebook from '../assets/facebook.png'
+import Instagram from "../assets/instagram.png"
+import Twitter from "../assets/twitter.png"
+import Pinterest from "../assets/pinterest.png"
 
 function HomeScreen() {
   return (
@@ -99,10 +103,10 @@ function HomeScreen() {
                   We put our trust in Sunnyside and they delivered, making sure
                   our needs were and deadlines were always hit.
                 </p>
-                <footer className="client-footer">
+                <summary className="client-footer">
                   <h4>Emily R.</h4>
                   <p>Marketing Director</p>
-                </footer>
+                </summary>
               </aside>
               <aside className="client-box">
                 <img src={Thomas} alt="avatar" />
@@ -110,10 +114,10 @@ function HomeScreen() {
                   Sunnyside's enthusiams coupled with their keen interest in our
                   brand's success made it a satisfying and enjoyable experience.
                 </p>
-                <footer className="client-footer">
+                <summary className="client-footer">
                   <h4>Thomas S.</h4>
                   <p>Chief Operating Officer</p>
-                </footer>
+                </summary>
               </aside>
               <aside className="client-box">
                 <img src={Jennie} alt="avatar" />
@@ -121,18 +125,37 @@ function HomeScreen() {
                   Incredible end result! Our sales increased over 400% when we
                   worked with Sunnyside. Highly recommended.
                 </p>
-                <footer className="client-footer">
+                <summary className="client-footer">
                   <h4>Jennie F.</h4>
                   <p>Business Owner</p>
-                </footer>
+                </summary>
               </aside>
             </div>
           </section>
         </div>
+        <div className="gallery">
+            <div className="gallery-box1"></div>
+            <div className="gallery-box2"></div>
+            <div className="gallery-box3"></div>
+            <div className="gallery-box4"></div>
+        </div>
       </main>
 
       <footer>
-        
+        <div>
+          <h1>sunnsyide</h1>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+            <ul className="socials">
+                <li><img src={Facebook} alt="socials" /></li>
+                <li><img src={Instagram} alt="socials" /></li>
+                <li><img src={Twitter} alt="socials" /></li>
+                <li><img src={Pinterest} alt="socials" /></li>
+            </ul>
+        </div>
       </footer>
     </div>
   );
