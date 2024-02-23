@@ -28,6 +28,7 @@ function HomeScreen() {
           <img src={Arrow} alt="arrow" />
         </div>
       </header>
+
       <main>
         <div className="info-box">
           <div>
@@ -129,6 +130,10 @@ function HomeScreen() {
           </section>
         </div>
       </main>
+
+      <footer>
+        
+      </footer>
     </div>
   );
 }
